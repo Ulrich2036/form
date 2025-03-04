@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription GLF</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menu de navigation -->
+    <nav>
+        <ul>
+            <li><a href="#inscription" class="nav-link">Formulaire Inscription</a></li>
+            <li><a href="#acceptation" class="nav-link">Acceptation</a></li>
+            <li><a href="#a-savoir" class="nav-link">À savoir</a></li>
+            <li><a href="#a-propos" class="nav-link">À propos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section Formulaire Inscription -->
+    <section id="inscription" class="content-section active">
+        <div class="container">
+            <h1>Formulaire d'inscription GLF</h1>
+            <p>Bienvenue sur notre plateforme d'inscription. Veuillez remplir le formulaire ci-dessous pour vous inscrire.</p>
+            <form id="inscriptionForm">
+                <!-- Informations de base -->
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+
+                <label for="dateNaissance">Date de naissance :</label>
+                <input type="date" id="dateNaissance" name="dateNaissance" required>
+
+                <label for="genre">Genre :</label>
+                <select id="genre" name="genre" required>
+                    <option value="">Sélectionnez</option>
+                    <option value="Homme">Homme</option>
+                    <option value="Femme">Femme</option>
+                    <option value="Autre">Autre</option>
+                </select>
+
+                <label for="paysNaissance">Pays de naissance :</label>
+                <select id="paysNaissance" name="paysNaissance" required>
+                    <option value="">Sélectionnez un pays</option>
+                    <!-- Les options seront générées par JavaScript -->
+                </select>
+
+                <!-- Coordonnées -->
+                <label for="email">Adresse Gmail :</label>
+                <input type="email" id="email" name="email" required>
+
+                 <!-- Indicatif téléphonique et numéro de téléphone -->
+            <label for="indicatif">Téléphone :</label>
+            <div class="telephone-container">
+                <select id="indicatif" name="indicatif" required>
+                    <option value="">Indicatif</option>
+                    <!-- Les options seront générées par JavaScript -->
+                </select>
+                <input type="tel" id="telephone" name="telephone" placeholder="Numéro de téléphone" required>
+            </div>
+                <!-- Mot de passe -->
+                <label for="motDePasse">Mot de passe :</label>
+                <input type="password" id="motDePasse" name="motDePasse" required>
+
+                <label for="confirmerMotDePasse">Confirmer le mot de passe :</label>
+                <input type="password" id="confirmerMotDePasse" name="confirmerMotDePasse" required>
+
+                <!-- Conditions générales -->
+                <div>
+                    <input type="checkbox" id="conditions" name="conditions" required>
+                    <label for="conditions">J'accepte les conditions générales d'utilisation.</label>
+                </div>
+
+                <!-- Bouton de soumission -->
+                <button type="submit">S'inscrire</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Section Acceptation -->
+    <section id="acceptation" class="content-section">
+        <div class="container">
+            <h2>Acceptation</h2>
+            <p>
+                En soumettant ce formulaire, vous acceptez les termes et conditions d'utilisation de notre plateforme.
+                Nous nous engageons à protéger vos données personnelles conformément à notre politique de confidentialité.
+            </p>
+            <h3>Politique de confidentialité</h3>
+            <ul>
+                <li>Vos données ne seront pas partagées avec des tiers sans votre consentement.</li>
+                <li>Nous utilisons des mesures de sécurité avancées pour protéger vos informations.</li>
+                <li>Vous pouvez demander la suppression de vos données à tout moment.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section À savoir -->
+    <section id="a-savoir" class="content-section">
+        <div class="container">
+            <h2>À savoir</h2>
+            <p>
+                Voici quelques informations importantes à connaître avant de vous inscrire :
+            </p>
+            <ul>
+                <li>Tous les champs du formulaire sont obligatoires.</li>
+                <li>Votre adresse Gmail sera utilisée pour vous envoyer des notifications importantes.</li>
+                <li>Vous pouvez modifier vos informations à tout moment en contactant le support.</li>
+                <li>L'inscription est gratuite et sans engagement.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="a-propos" class="content-section">
+        <div class="container">
+            <h2>À propos</h2>
+            <p>
+                Ce site a été créé par Ulrich GLF dans le but de simplifier le processus d'inscription pour nos utilisateurs.
+                Nous nous efforçons de fournir une expérience utilisateur fluide et sécurisée.
+            </p>
+            <h3>Contact</h3>
+            <p>
+                Pour toute question ou assistance, vous pouvez nous contacter à l'adresse suivante :
+            </p>
+            <ul>
+                <li><strong>Par WhatsApp :</strong> <a href="https://wa.me/22959874094" target="_blank">+229 59 87 40 94</a></li>
+                <li><strong>Par email :</strong> <a href="mailto:gnonlonfounulrich@outlook.com">gnonlonfounulrich@outlook.com</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer avec copyright -->
+    <footer>
+        <p class="copyright">© 2025. Tous droits réservés Ulrich GLF.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

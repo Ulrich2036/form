@@ -1,0 +1,128 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    padding-bottom: 60px; /* Espace pour le footer */
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Jaune */
+}
+
+/* Sections */
+.content-section {
+    display: none; /* Masquer toutes les sections par défaut */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-section.active {
+    display: block; /* Afficher la section active */
+}
+
+h1, h2 {
+    color: #ffcc00; /* Jaune */
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Formulaire */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+textarea {
+    resize: vertical; /* Permettre le redimensionnement vertical */
+    min-height: 100px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffcc00; /* Jaune */
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+/* Conteneur pour l'indicatif et le numéro de téléphone */
+.telephone-container {
+    display: flex;
+    gap: 10px; /* Espace entre l'indicatif et le numéro */
+}
+
+.telephone-container select {
+    flex: 1; /* L'indicatif prend 1 partie de l'espace */
+}
+
+.telephone-container input {
+    flex: 3; /* Le numéro de téléphone prend 3 parties de l'espace */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; /* S'assurer que le footer est au-dessus du contenu */
+}
